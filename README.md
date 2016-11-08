@@ -21,8 +21,21 @@ Uses the OneWire Library. Documentation: http://www.pjrc.com/teensy/td_libs_OneW
 Currently ouputs in Farenheit and Celsius
 
 ##Light sensor:
+Photoresistor sensor. (type unknown)
+-measures resistance created due to light presence. Can not provide a scientifically accurate light measurement; However, it should give a good indicator of light presence.
+```
+------
+|     --- Signal
+| O   --- +5V
+|     --- GND
+------
+```
+** Note that this schematic is not the same as the documentation **
+Hook Signal up to pin A0
+Hook 5V up to the Vout
+Hook GND to GND
 
-
+Uses an approximation calculation for conversion to Lux (but can't be trusted to be accurate)
 
 ##Humidity sensor:
 
